@@ -36,10 +36,12 @@ int sum_elements(int* array, int size) {
 		return 0;
 
 	}
+	int first = get_first_zero_index(array, size);
+	int last = get_last_zero_index(array, size);
+
 	int sum = 0;
 
-	int first = get_first_zero_idnex(array, size);
-	int last = get_last_zero_idnex(array, size);
+	
 	
 	for (int i = first + 1; i < last; i++)
 	{
